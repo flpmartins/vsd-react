@@ -1,6 +1,6 @@
 import React from 'react'
 import { Home } from '../../pages/Home'
-import { Profile } from '../..//pages/Profile'
+import { Profile } from '../../pages/Profile'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 function AppRoutes() {
