@@ -17,10 +17,10 @@
               </button>
               <div style={styles.socialContainer}>
                 <a href="" style={styles.socialLink}>
-                  <img src="" alt="Github"  style={styles.socialIcon}/>
+                  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"  style={styles.socialIcon}/>
                 </a>
                 <a href="" style={styles.socialLink}>
-                  <img src="" alt="linkedin" style={styles.socialIcon}/>
+                  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin" style={styles.socialIcon}/>
                 </a>
               </div>
             </div>
@@ -81,16 +81,21 @@ const styles = {
     border: 'none',
     borderRadius:'10px',
      marginTop: '10px',
+     transition: 'all 0.2s ease-in-out',
      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.25)',
   },
   socialContainer: {
-
+    display: 'flex',
+    gap: '20px',
+    marginTop:'20px'
   },
   socialLink: {
-
+    transition: 'transform 0.2s'
   },
   socialIcon: {
-
+    width: '32px',
+    height: '32',
+    filter: 'brightness(0) invert(1)'
   }
 }
 
