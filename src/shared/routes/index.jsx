@@ -8,7 +8,7 @@ function AppRoutes() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/profile' element={<Profile/>}/>
+      <Route path='/portifolio' element={<Profile/>}/>
     </Routes>
   </BrowserRouter>
   )

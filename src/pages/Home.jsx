@@ -1,6 +1,10 @@
- import React from 'react'
+ import React, { useState } from 'react'
  import { Layout } from '../layout'
+import { useNavigate } from 'react-router-dom'
  function Home() {
+  const navigate = useNavigate()
+  const [hovered, setHovered] = useState(false)
+
   return (
     <Layout title={""}>
           <div style={styles.containerWrapper}>
@@ -12,7 +16,17 @@
                 Aqui você encontrará meus projetos
                 mais recentes e minha jornada profissional.
               </p>
-              <button style={styles.button}>
+              <button style={{...styles.button,
+              transform: hovered ? 'scale(1.03)' : 'scale(1)',
+              boxShadow: hovered 
+              ? '0 6px  16px rgba(225, 0, 255, 0.4)'
+               : '0 4px 12px rgba(0, 0, 0, 0.25)'
+              }}
+              onClick={() => navigate('/portifolio')}
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+
+               >
                 Explorar Portfólio
               </button>
               <div style={styles.socialContainer}>
